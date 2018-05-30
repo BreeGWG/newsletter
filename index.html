@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Brighton Times</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link href="/assets/lib/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/utilities.css">
     <link rel="stylesheet" type="text/css" href="./assets/lib/fontawesome-free-5.0.13">
+    <script src="/assets/js/main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -21,10 +24,16 @@
 
     <nav id="drawer" class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#">News</a></li>
-        <li class="nav__item"><a href="#">Events</a></li>
-        <li class="nav__item"><a href="#">Culture</a></li>
-        <li class="nav__item"><a href="#">Blog</a></li>
+        <li class="hamburger">
+          <a class="menu" href="#">
+            <i class="fas fa-bars show"></i>
+            <i class="fas fa-times hide"></i>
+          </a>
+        </li>
+        <li class="nav__item hide"><a href="#">News</a></li>
+        <li class="nav__item hide"><a href="#">Events</a></li>
+        <li class="nav__item hide"><a href="#">Culture</a></li>
+        <li class="nav__item hide"><a href="#">Blog</a></li>
       </ul>
     </nav>
 

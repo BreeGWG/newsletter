@@ -92,7 +92,7 @@ ul {
   padding: 0;
   margin: 0;
 }
-
+ 
 .nav__item {
   box-sizing: border-box;
   display: inline-block;
@@ -101,7 +101,14 @@ ul {
   line-height: 24px;
   text-transform: uppercase;
 }
+.nav .hamburger {
+  display:none;
+}
 
+.nav a,
+.nav .menu {
+  text-decoration: none;
+}
 .nav a {
   text-decoration: none;
   color: #616161;
@@ -381,18 +388,28 @@ footer a {
  *
  */
 @media screen and (max-width: 450px) {
-   
-    ul .nav__item {
-      display: block;
-      width: 100%;
-      border-bottom: 1px solid rgba(33, 33, 33, 0.2);
-    }
+  
+  ul .nav__item {
+    width: 100%;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+  } 
+  
+  .nav .hamburger {
+    text-align: right;
+    font-size: 30px;
+    display: block;
+  }
 
-    ul .nav__item:hover {
-      background-color: royalblue;
-    }
-    ul .nav__item :last-child {
-      border-bottom: none;
-    }
+  .nav .hamburger a{
+     text-decoration: none;
+  }
+
+  ul .nav__item:hover {
+    background-color: royalblue;
+  }
+  
+  ul .nav__item :last-child {
+    border-bottom: none;
+  }
     
 }
