@@ -1,7 +1,10 @@
-.hide {
-  display: none;
-}
 
-.show {
-    display: block;
+@media screen and (max-width: 450px) { 
+    .hide {
+        display: none;
+      }
+      
+      .show {
+          display: block;
+      }
 }
