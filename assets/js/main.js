@@ -30,7 +30,7 @@ function addHamburgerListener () {
                         navItems[i].classList.remove("show");
                     }
                 }  
-              console.log(navItems);
+        
             }         
                     // document.getElementsByClassName("fa-times")[0].toggle("show");
         }, false);
