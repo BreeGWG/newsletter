@@ -1,6 +1,6 @@
 function addHamburgerListener () {
 
-    document.getElementById("drawer").addEventListener("click",
+    document.getElementById("header").addEventListener("click",
         function (e){
             var bars = document.getElementsByClassName("fa-bars")[0];
             var times = document.getElementsByClassName("fa-times")[0];

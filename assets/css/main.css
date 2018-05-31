@@ -478,4 +478,9 @@ footer a {
   .logo-wrapper {
     display: none;
   }
+
+  .scores__table {
+    width: 80%;
+    margin: auto;
+  }
 }
