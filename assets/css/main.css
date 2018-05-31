@@ -45,7 +45,6 @@ ul {
  * Header
  *
  */
-
 .header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   min-height: 56px;
@@ -57,6 +56,12 @@ ul {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.logo-wrapper,
+.title-wrapper {
+  display:inline-block;
+  vertical-align: top;
 }
 
 .header__logo {
@@ -74,6 +79,13 @@ ul {
   color: #212121;
 }
 
+.header .hamburger {
+  display:none;
+}
+
+.header .menu {
+  text-decoration: none;
+}
 
 /*
  *
@@ -101,14 +113,7 @@ ul {
   line-height: 24px;
   text-transform: uppercase;
 }
-.nav .hamburger {
-  display:none;
-}
 
-.nav a,
-.nav .menu {
-  text-decoration: none;
-}
 .nav a {
   text-decoration: none;
   color: #616161;
@@ -368,6 +373,11 @@ footer {
   border-top: 1px solid #E0E0E0;
   padding: 1em;
   width: 100%;
+  background: antiquewhite;
+}
+
+footer ul {
+  text-align: center;
 }
 
 footer li {
@@ -388,21 +398,59 @@ footer a {
  *
  */
 @media screen and (max-width: 450px) {
+  .header__inner{
+    padding: 15px 5px; 
+  }
+
+  .logo-wrapper,
+  .title-wrapper,
+  .hamburger-wrapper {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+
+  .logo-wrapper {
+    width: 10%;
+  }
+
+  .hamburger-wrapper {
+    float: right;
+  }
+  .header__logo {
+    margin-right: 0;
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .header .header__title,
+  .header .hamburger { 
+    display: block;
+  }
+
+  .header .header__title {
+    font-size: 25px;
+    font-weight: 400;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
   
+  .header .hamburger {
+    text-align: right;
+    font-size: 30px;
+  }
+
+  .header .hamburger a{
+     text-decoration: none;
+  }
+
   ul .nav__item {
     width: 100%;
     border-bottom: 1px solid rgba(33, 33, 33, 0.2);
   } 
   
-  .nav .hamburger {
-    text-align: right;
-    font-size: 30px;
-    display: block;
-  }
-
-  .nav .hamburger a{
-     text-decoration: none;
-  }
 
   ul .nav__item:hover {
     background-color: royalblue;
@@ -411,5 +459,23 @@ footer a {
   ul .nav__item :last-child {
     border-bottom: none;
   }
-    
+  
+ footer .caption {
+   display: none;
+ }
+
+}
+@media screen and (max-width: 300px) {
+
+  .header__inner{
+    text-align: center;
+  }
+ 
+  .header .header__title {
+    font-size: 8vw;
+  }
+
+  .logo-wrapper {
+    display: none;
+  }
 }
