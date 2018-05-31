@@ -2,7 +2,8 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-height: 1350px;
 }
 
 body {
@@ -53,7 +54,7 @@ ul {
 
 .header__inner {
   width: 100%;
-  max-width: 800px;
+  max-width: 955px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -134,7 +135,6 @@ ul {
  */
 
 main {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -235,6 +235,10 @@ main {
 .scores__table {
   width: 100%;
   border-collapse: collapse;
+}
+
+.scores__table thead th:first-child{
+  text-align: left;
 }
 
 .scores__table th,
@@ -374,6 +378,8 @@ footer {
   padding: 1em;
   width: 100%;
   background: antiquewhite;
+  position: fixed;
+  bottom: 0;
 }
 
 footer ul {
@@ -397,6 +403,66 @@ footer a {
  * Responsive
  *
  */
+
+
+@media screen and (min-width: 769px) { 
+ 
+  .content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+   
+  .hero, .top-news {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+  }
+ 
+  .top-news__item a {
+    padding: 5px;
+  }
+   
+  .scores {
+    width: 66%;
+  }
+
+  .weather {
+      width: 33%;
+      box-sizing: border-box;
+      display: inline-block;
+  }
+  .news .snippet {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 0 7px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px)  {
+  
+  .hero, .top-news {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  footer {
+    position: static;
+  }
+}
+@media screen and (max-width: 599px) {
+  
+ 
+  .header__title {
+    font-size: 3.0em;
+  }
+
+  footer {
+    position: static;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .header__inner{
     padding: 15px 5px; 
@@ -410,6 +476,10 @@ footer a {
     vertical-align: top;
   }
 
+  .title-wrapper {
+    text-align: center;
+    width: 80%;
+  } 
   .logo-wrapper {
     width: 10%;
   }
@@ -430,7 +500,7 @@ footer a {
   }
 
   .header .header__title {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 400;
     height: auto;
     padding: 0;
@@ -440,6 +510,7 @@ footer a {
   .header .hamburger {
     text-align: right;
     font-size: 30px;
+    padding-top: 5px;
   }
 
   .header .hamburger a{
