@@ -536,6 +536,11 @@ footer a {
   ul .nav__item :last-child {
     border-bottom: none;
   }
+
+  .scores__table td:nth-child(2),
+  .scores__table th:nth-child(2) {
+      display: none;
+  }
   
  footer .caption {
    display: none;
@@ -555,7 +560,7 @@ footer a {
   .logo-wrapper {
     display: none;
   }
-
+  
   .scores__table {
     width: 80%;
     margin: auto;
